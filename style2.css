@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    64.3deg,
+    rgba(254, 122, 152, 0.81) 17.7%,
+    rgba(255, 206, 134, 1) 64.7%,
+    rgba(172, 253, 163, 0.64) 112.1%
+  );
+  background-size: 200%;
+  animation: gradient-animation 25s infinite alternate;
+}
+
+#poke_container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  width: 82%;
+  margin: auto;
+}
+
+.pokemon {
+  width: 15vmax;
+  text-align: center;
+  /* margin: auto; */
+  padding: 1.7rem;
+  height: 19vmax;
+  border-radius: 3%;
+}
+
+.pokemon p:nth-child(2) {
+  margin-top: -0.6rem;
+}
+
+p {
+  color: white;
+}
+
+img {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.get-poke {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 10vmax;
+  background-image: linear-gradient(
+    89.7deg,
+    rgba(0, 0, 0, 1) -10.7%,
+    rgb(64, 100, 131) 88.8%
+  );
+  color: transparent;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient-animation 5s infinite alternate;
+}
+
+button {
+  margin: 1rem;
+  width: 6vmax;
+  height: 3vmax;
+  font-size: 1.2vmax;
+  border-radius: 0.5rem;
+  border-width: 0;
+  padding: 0.6rem;
+  background-color: #ffe480;
+  border: thin #d0b34a solid;
+}
+
+button:hover {
+  background-color: #f1d058;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
